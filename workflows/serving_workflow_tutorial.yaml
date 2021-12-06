@@ -40,11 +40,3 @@ spec:
           env:
             - name: STORAGE_URI
               value: "{{inputs.artifacts.textmodel}}"
-        - name: docker-image
-          image: "docker.io/danmcool/im2:0.0.1"
-          ports:
-            - containerPort: 9002
-              protocol: TCP
-          env:
-            - name: STORAGE_URI
-              value: "{{inputs.artifacts.textmodel}}"
